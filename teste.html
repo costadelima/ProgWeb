@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>teste</title>
+        <style>
+            .teste_div{
+              width: 200px;
+              height: 200px;
+              background: red;
+              border: 1px solid green;
+            }
+            /* #test{
+              width: 200px;
+              height: 200px;
+              background: red;
+            } */
+        </style>
+    </head>
+    <body>
+        <h1 id="demo" class="teste_div">Clique aqui</h1>
+
+        <!-- <div class="teste_div"></div> -->
+
+
+        <script>
+        let i = 1;
+          let variavel = document.querySelector('#demo');
+          console.log(variavel);
+          variavel.addEventListener('click', myClick);
+          function myClick(event){
+            variavel.classList.toggle('teste_div');
+            // variavel.innerHTML = 'Obrigado!';
+            let ativa = event.currentTarget;
+            console.log(ativa);
+          }
+
+
+          // document.getElementById('demo').innerHTML = 'texto do meu paragrafo';
+          // console.log(document.getElementsByTagName('p'));
+          // let x = document.getElementsByClassName('exemplo');
+          // let x = document.title;//document.querySelectorAll('p.exemplo');
+          // console.log(x);
+
+          // function funcao(){
+          //   document.getElementById('demo').innerHTML = 'Obrigado!';
+          // }
+          // document.getElementById('demo').onclick = funcao;
+          // let cores = ['azul', 'rosa', 'branco'];
+          // let objeto = {nome:'luiz', idade:27}
+          // for (let cor of cores){
+          //   console.log(cor);
+          // }
+          // alert('mensagenzinha feia');
+          // window.confirm('pede confirmação');
+          // prompt('escreva seu nome:');
+          /* nao funciona, pq????
+          let pai = document.querySelectorAll('head');
+          console.log(pai);
+          let dado = document.createElement('div');
+          pai.appendChild(dado);
+          console.log(dado);
+          */
+          // let variavel = document.getElementsByClassName('body');
+          // console.log(variavel);
+          // for(let x of variavel){
+          //   x.addEventListener('click', myClick);
+          // }
+          //
+          // function myClick(event){
+          //   console.log(event.currentTarget);
+          //   let ativa = event.currentTarget;
+          //   // console.log(ativa);
+          //   ativa.classList.toggle('teste_div');
+            // ativa.classList.toggle('teste_div');
+            // console.log(ativa);
+          // }
+        </script>
+    </body>
+</html>
